@@ -51,7 +51,7 @@ def generated_playlist():
         
         # Add channel info and stream URL
         playlist += f"#EXTINF:-1,{channel_name}\n"
-        playlist += f"http://localhost:5000/stream/{channel_id}.m3u8\n"
+        playlist += f"https://nimi-2ba10c703527.herokuapp.com:80/stream/{channel_id}.m3u8\n"
 
     return Response(
         playlist,
